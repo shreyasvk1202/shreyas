@@ -3,3 +3,26 @@
 @media(max-width:900px){.hero{gap:10px;padding-top:65px;grid-template-columns:1fr .85fr}.hero-art{height:400px}.avatar-ring{width:250px}.orbit-one{width:310px}.orbit-two{width:350px}.chip-top{right:-3%}.chip-bottom{left:-5%}.about-grid{gap:35px}.skills-grid{grid-template-columns:repeat(2,1fr)}.certificate-grid{grid-template-columns:repeat(2,1fr)}.contact-inner{gap:35px}}
 @media(max-width:640px){.topbar{height:70px;padding:0 5%}.menu-toggle{display:block}nav{display:none;position:absolute;top:69px;left:0;right:0;padding:18px 5%;background:#1b1511;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{padding:12px 0;border-bottom:1px solid var(--line)}nav .nav-contact{margin-top:9px;padding:10px 12px;border:1px solid var(--line)}.hero{min-height:auto;grid-template-columns:1fr;padding:62px 0 85px;gap:0}.hero-copy{position:relative;z-index:2}.hero-art{height:350px;margin-top:22px}.avatar-ring{width:235px}.orbit-one{width:300px}.orbit-two{width:330px}.chip-top{top:35px;right:0}.chip-bottom{bottom:43px;left:0}.hero-scroll{bottom:27px}.section-block{padding:75px 0}.about-grid,.project-grid,.contact-inner{grid-template-columns:1fr}.about-grid{gap:32px}.stats-row{grid-template-columns:repeat(2,1fr);margin-top:38px}.stats-row>div{padding:18px 12px;border-bottom:1px solid var(--line)}.stats-row>div:nth-child(2){border-right:0}.stats-row>div:nth-child(3){padding-left:0}.stats-row>div:nth-child(3),.stats-row>div:nth-child(4){border-bottom:0}.skills-grid{gap:10px}.skill-card{padding:18px 14px}.project-content>p{min-height:0}.certificate-grid{grid-template-columns:1fr}.certificate-card{min-height:215px}.contact-inner{padding:75px 0;gap:35px}.footer{padding:23px 0;flex-wrap:wrap}.footer p{order:3;width:100%;margin:0}.footer>span{font-size:7px}.project-footer{font-size:7px}.project-content h3{font-size:18px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+/* Profile photo styling */
+.photo-ring {
+  padding: 3px;
+}
+
+.photo-inner {
+  overflow: hidden;
+}
+
+.photo-inner::before,
+.photo-inner::after {
+  pointer-events: none;
+}
+
+.photo-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
+  border-radius: 50%;
+  display: block;
+  filter: saturate(0.88) contrast(1.03);
+}
